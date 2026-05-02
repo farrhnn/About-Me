@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Farhan | Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="foto/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="foto/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="foto/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="cursor" id="cursor"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="comets-container"></div>
+    <div id="scroll-progress"></div>
+
+    <nav>
+        <div class="logo">FARHAN.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Story</a></li>
+            <li><a href="#hobbies">Hobby</a></li>
+            <li><a href="#moments">Moments</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="marquee-background">
+            <div class="track">
+                <span>TEKNIK INFORMATIKA • CREATIVE CONTENT • CINEMATOGRAPHY • UI/UX DESIGN • </span>
+                <span>TEKNIK INFORMATIKA • CREATIVE CONTENT • CINEMATOGRAPHY • UI/UX DESIGN • </span>
+            </div>
+        </div>
+        <div class="hero-content reveal">
+          <p id="dynamic-greeting" class="greeting-text"></p>
+            <h1 class="text-gradient">TECH<br>CREATIVE<br>EXPLORER</h1>
+            <p class="hero-desc">Mahasiswa Teknik Informatika & Kreator Digital fokus pada visual dan pengembangan sistem komputer.</p>
+        </div>
+    </section>
+    <section id="about">
+    <div class="reveal about-container">
+        <div class="about-grid">
+            <div class="about-visual">
+                <div class="photo-wrapper">
+                    <img src="foto/foto profile.jpeg" alt="Muhammad Farhan" class="main-profile">
+                    <div class="floating-icon tech-1"><i class="fab fa-java"></i></div>
+                    <div class="floating-icon tech-2"><i class="fab fa-js"></i></div>
+                    <div class="floating-icon tech-3"><i class="fas fa-code"></i></div>
+                    <div class="floating-icon tech-4"><i class="fab fa-html5"></i></div>
+                </div>
+            </div>
+            <div class="about-info">
+                <h2 class="section-title">01. <span class="text-gradient">About Me</span></h2>
+                <div class="glass-card bio-card">
+                    <p>Halo, saya <strong>Muhammad Farhan</strong>. NIM 251011401984.</p>
+                    <p>Mahasiswa Teknik Informatika yang berfokus pada keseimbangan antara fungsi kode dan estetika visual.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-num">2026</span>
+                            <span class="stat-label">Batch Year</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">4.0</span>
+                            <span class="stat-label">Creative Passion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="hobbies">
+        <div class="bento-grid">
+    <div class="bento-item bento-large reveal" onclick="openModal('photo')">
+        <img src="foto/karina pics on X.jpg" alt="Photography" class="bento-img">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+            <span class="badge"><i class="fas fa-camera"></i> Hobby</span>
+            <h3>Photography</h3>
+            <p>Captured Moments</p>
+        </div>
+    </div>
+
+    <div class="bento-item bento-tall reveal">
+        <div class="bento-content">
+            <span class="badge"><i class="fab fa-spotify"></i> Spotify</span>
+            <h3>Music Playlist</h3>
+            <p>Kvn</p>
+            <div class="playlist-stack">
+                <button class="play-card" onclick="openSpotifyModal('4NJddevGY2XsCqZ9B4pIqL')">
+                    <span class="play-icon"><i class="fas fa-play"></i></span>
+                    <div class="play-info"><span>What Do You Mean</span><small>Pop</small></div>
+                </button>
+                <button class="play-card" onclick="openSpotifyModal('6pmUMwvnMzuAfKRON0il0x')">
+                    <span class="play-icon"><i class="fas fa-play"></i></span>
+                    <div class="play-info"><span>Studying</span><small>Pop</small></div>
+                </button>
+                <button class="play-card" onclick="openSpotifyModal('3FxqCKNmp8J6so3EQW4RMt')">
+                    <span class="play-icon"><i class="fas fa-play"></i></span>
+                    <div class="play-info"><span>Justin Bieber</span><small>Pop</small></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bento-item reveal" onclick="openModal('game')">
+        <div class="bento-content">
+            <i class="fas fa-gamepad icon-bg"></i>
+            <h3>Gaming</h3>
+            <p>Open World & Battle Royale</p>
+        </div>
+    </div>
+    <div class="bento-item reveal">
+        <div class="bento-content">
+            <i class="fas fa-book icon-bg"></i>
+            <h3>Literature</h3>
+            <p>Chinese Literature</p>
+        </div>
+    </div>
+</div>
+    </section>
+<section id="gallery">
+<div class="bento-item bento-large reveal" id="moments-gallery">
+    <div class="bento-content">
+        <span class="badge"><i class="fas fa-heart"></i> Moments</span>
+        <h3>Unforgettable</h3>
+        <p>Life's core memories</p>
+        
+        <div class="scattered-photos">
+            <img src="moment/1.jpg" class="moment-photo m1" alt="Moment 1">
+            <img src="moment/2.jpg" class="moment-photo m2" alt="Moment 2">
+            <img src="moment/3.jpg" class="moment-photo m3" alt="Moment 3">
+            <img src="moment/4.jpg" class="moment-photo m4" alt="Moment 4">
+        </div>
+    </div>
+</div>
+</section>
+    <!-- Moments Video -->
+    <section id="moments">
+        <div class="reveal section-header">
+            <h2 class="section-title">Captured <span class="text-gradient">Moments</span></h2>
+            <p>Cuplikan Moment Terbaik Dalam Hidup Saya</p>
+        </div>
+        <div class="moments-grid">
+            <div class="video-card reveal">
+                <video loop muted playsinline class="moment-video"><source src="video/UI.mp4" type="video/mp4"></video>
+                <div class="video-overlay"><span>PPKMB UI 2026</span></div>
+            </div>
+            <div class="video-card reveal">
+                <video loop muted playsinline class="moment-video"><source src="video/karina.mp4" type="video/mp4"></video>
+                <div class="video-overlay"><span>Karina Mood</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- Favorite Girl -->
+    <section id="special-one">
+        <div class="reveal section-header">
+            <h2 class="section-title">My <span class="text-gradient">Favorite Girl</span></h2>
+        </div>
+        <div class="favorite-container reveal" onclick="toggleSpecialMusic()">
+            <audio id="specialMusic" loop><source src="audio/Favorite Girl.mp3" type="audio/mp3"></audio>
+            <div class="favorite-grid">
+                <div class="favorite-info">
+                    <h3 class="text-gradient">Karina</h3>
+                    <p>Dia adalah sosok luar biasa yang selalu memberikan energi positif dalam hidup saya.</p>
+                    <div class="music-indicator"><i class="fas fa-music"></i> <span>Click to Play Our Song</span></div>
+                </div>
+                <div class="favorite-gallery">
+                    <div class="photo-frame p1"><img src="foto/Karina Icon.jpg" alt="Karina"></div>
+                    <div class="photo-frame p2"><img src="foto/karina — ★!.jpg" alt="Karina"></div>
+                    <div class="photo-frame p3"><img src="foto/karin.jpg" alt="Karina"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="motivation-section reveal">
+    <div class="motivation-content">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <h2 class="motivation-text">
+            "Coding is the language of the future, but <span class="text-gradient">creativity</span> is what gives it a soul."
+        </h2>
+        <p class="motivation-sub">Keep pushing the boundaries of what's possible.</p>
+    </div>
+</section>
+    <!-- Modal Structure -->
+    <div id="hobbyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" style="text-align: center; color: var(--primary); margin-bottom: 20px;"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/farrhnn"><i class="fab fa-github"></i> GITHUB</a>
+            <a href="https://www.instagram.com/farrhnn.e?igsh=MTh6czh0OHl6czFpbg%3D%3D"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+            <a href="https://open.spotify.com/user/316ljvrvhyohg7u2sp7p7zws6jsa?si=b81ff068ba674881"><i class="fab fa-spotify"></i> SPOTIFY</a>
+        </div>
+        <p class="copyright">© 2026 MUHAMMAD FARHAN — 251011401984</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
