@@ -5,6 +5,10 @@ const specialMusic = document.getElementById('specialMusic');
 let isMusicPlaying = false;
 
 // --- CURSOR LOGIC ---
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    const customCursor = document.querySelector('.cursor');
+    if(customCursor) customCursor.style.display = 'none';
+}
 document.addEventListener('mousemove', (e) => {
     cursor.style.opacity = '1';
     cursor.style.left = e.clientX + 'px';
